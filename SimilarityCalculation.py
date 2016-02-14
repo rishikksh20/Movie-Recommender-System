@@ -1,3 +1,8 @@
+#  Movie Recommender System
+#  Author: Rishikesh
+#  Date: 13th Feb 2016  
+#
+
 import pandas as pd
 
 
