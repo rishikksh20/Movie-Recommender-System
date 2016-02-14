@@ -4,7 +4,8 @@
 #
 
 import pandas as pd
-
+import scipy
+import sklearn
 
 r_cols=['user_id','movie_id','rating']
 ratings=pd.read_csv('ml-latest/ratings.csv',names=r_cols,usecols=range(3))
