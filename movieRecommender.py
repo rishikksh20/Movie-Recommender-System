@@ -266,7 +266,7 @@ print response.url.split('/')[-2]
 
 # Get base url filepath structure. w185 corresponds to size of movie poster.
 headers = {'Accept': 'application/json'}
-payload = {'api_key': 'INSERT API_KEY HERE'} 
+payload = {'api_key': 'Plz insert your key here '}
 response = requests.get("http://api.themoviedb.org/3/configuration", params=payload, headers=headers)
 response = json.loads(response.text)
 base_url = response['images']['base_url'] + 'w185'
@@ -301,7 +301,7 @@ toy_story = 'http://us.imdb.com/M/title-exact?Toy%20Story%20(1995)'
 
 # Load in movie data
 idx_to_movie = {}
-with open('u.item', 'r') as f:
+with open('ml-100k/u.item', 'r') as f:
     for line in f.readlines():
         info = line.split('|')
         idx_to_movie[int(info[0])-1] = info[4]
